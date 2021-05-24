@@ -1,0 +1,34 @@
+PROJECT 
+1234
+
+create table department (deptno int primary key, dname varchar2(30))
+create sequence dept_id start with 1 increment by 1   //use dept_id.nextval to input data in deptno
+create trigger incid before insert on department for each row begin select dept_id.nextval into:new.deptno from dual; 
+end;
+
+
+
+create table patient (username varchar2(20) primary key, name varchar2(50) ,password varchar2(30), contact varchar2(20)) 
+
+
+
+create table booking (booking_id int primary key, username varchar2(20), deptno int, doc_id int, b_date varchar2(20), b_time varchar2(15))
+create sequence booking_seq start with 1 increment by 1    //use booking_seq.nextval to input data in booking_id
+create trigger incid2 before insert on booking for each row begin select booking_seq.nextval into:new.booking_id from dual; 
+end;
+
+
+
+create table doctor (doc_id int primary key, doc_name varchar2(50), deptno int, d_date varchar2(20), d_time varchar2(15), capacity int)
+create sequence doc_seq start with 1 increment by 1 
+create trigger incid3 before insert on doctor for each row begin select doc_seq.nextval into:new.doc_id from dual; 
+end;
+
+
+insert into department (dname) values ('neurology')
+select * from department
+update department set dname='Neurology' where deptno=3
+
+insert into doctor (doc_name , deptno, d_date , d_time , capacity) values ('Dr. Riya Talukdar',3,'Wednessday','19:00:00',1)
+
+select * from doctor

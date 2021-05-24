@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+*{
+    margin: 0;
+    border: 0;
+}
+.nav-bar{
+    display: inline;
+    float: right;
+    align-items: left;
+   position: relative;
+}
+header{
+    float:left;
+    height:5vh;
+    background-color: #1B23D6;
+    width: 100%;
+}
+#nav-btn{
+    height:5vh;
+    width:10vw;
+    background-color: #1B23D6;
+    font-size: 1.2em;
+    color: white;
+}
+#nav-btn:hover{
+    background-color: white;
+    color:black;
+}
+#p-list{
+    padding-left: 0;
+    display:none;
+    font-size:30px;
+    list-style: none;
+    height:18vh;
+    background-color: white;
+    box-shadow:5px 5px 10px  black;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Archivo', sans-serif;
+}
+.p_list-ele{
+    padding-bottom: 2vh;
+    position: relative;
+    left: 2vw;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    padding-left: 0;
+}
+hr {
+    display: block solid black;
+    border-style: inset;
+    border-width: 1px;
+    width: 100%;
+  }
+  .heading{
+      width: 100%;
+      height: 45vh;
+        background-image:url("img/hospital.jpg");
+  }
+  h1{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 120px;
+    padding-top: 15vh;
+    padding-left: 5vw;
+    color: red;
+    text-shadow: 5px 2px 5px #1B23D6;
+  }
+  #userpic{
+      position: relative;
+      
+      width: 15vw;
+      left: 2.5vw;
+      top:2vh;
+      padding-bottom: 2vh;
+  }
+  .first{
+      position: relative;
+    display: inline-block;
+    left: 20vw;
+    height:35vh;
+    width: 20vw;
+    background-color: rgba(173, 170, 170, 0.781);
+    color: white;
+  }
+  h2{
+      padding-left: 1.8vw;
+      font-family: 'Architects Daughter', cursive;
+        font-family: 'Archivo', sans-serif;
+  }
+  .second{
+    position: relative;
+  display: inline-block;
+  left: 20vw;
+  height:35vh;
+  width: 20vw;
+  background-color: rgba(173, 170, 170, 0.781);
+  color: white;
+  left: 40vw;
+  top: 0vh;
+}
+#two{
+    padding-left: 6.5vw;
+}
+#patient{
+    font-size: 2.5em;
+    padding-top: 0;
+    padding-bottom: 2vh;
+}
+.patient{
+    padding-left: 35vw;
+    padding-bottom: 5vh;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}

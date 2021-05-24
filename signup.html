@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link href="form.css" rel="stylesheet">
+        <meta  name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1,viewport-fit=cover">
+    </head>
+    <body class="container">
+        <h1> Sign Up</h1>
+        <form action="register.jsp" method="POST" autocomplete="off" class="form2" onsubmit="return check()" id="form2">                  
+               <input type="text" name="username" placeholder="Username" id="username"> 
+               <span id="u_name_alert" class="error"></span>
+               <input type="text" name="name" placeholder="Name" id="name">
+               <span id="name_alert"  class="error"></span>     
+               <input type="text" name="email" placeholder="email" id="email">
+               <span id="email_alert" class="error"></span>                    
+               <input type="password" name="password" placeholder="Password" id="password">                                        
+              <input type="password" name="con_paswd" placeholder="Confirm" id="con_paswd"> 
+                <span id="pass_match_alert" class="error"></span>    
+           <input type="submit" value="Sign up" class="button" id="reg_btn"></td>       
+        </form>
+        
+        <script src="functions.js"></script>
+    </body>
+</html>

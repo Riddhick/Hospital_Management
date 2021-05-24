@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.form2{
+    overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 40px;
+  position:absolute;
+  top:25vh;
+  left:35vw;
+  width: 400px;
+  margin-bottom: 0%;
+  box-shadow: 5px 5px 10px #030522;
+  
+}
+input {
+    display: block;
+    border-radius: 40px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+    box-shadow: 5px 10px 10px #03052246;
+    outline: none;
+  }
+  #reg_btn{
+      background-color: #1B23D6;
+      color: white;
+  }
+  #reg_btn:hover{
+      background-color: red;
+  }
+  .error{
+      color:red;
+  }
+  h1{
+      position: relative;
+      left:46vw;
+      top:20vh;
+      color:#1B23D6;
+  }
+  .form1{
+    overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 30px;
+  position:absolute;
+  top:25vh;
+  left:35vw;
+  width: 400px;
+  margin-bottom: 0%;
+  box-shadow: 5px 5px 10px #030522;
+  
+}
+.button{
+  width:10vw;
+  display:inline;
+  position: relative;
+}
+#signup{
+  left:5vw;
+  background-color: red;
+  color: white;
+}
+#signup:hover{
+  background-color: #1B23D6;
+}
+#signin{
+  background-color: #1B23D6;
+  color: white;
+}
+#signin:hover{
+  background-color: red;
+}
+a:link{
+  color:white;
+  text-decoration: none;
+}
+.text{
+  position: relative;
+  left:8.5vw;
+  color: red;
+}
+#signin_text{
+  position: relative;
+  left: 9.5vw;
+  font-size: 2em;
+}
