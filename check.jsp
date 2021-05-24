@@ -31,6 +31,8 @@
                     //out.println("Welcome:  " + name);
                     isLoggedin="true";
                     out.print(isLoggedin);
+                    String pname=rs.getString("name");
+                    session.setAttribute("pname",pname);
                     session.setAttribute("isLoggedin", isLoggedin);
                     response.sendRedirect("welcome.jsp");
                     con.close();

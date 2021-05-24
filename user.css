@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.doclist{
+    background-color: yellow;
+    padding-bottom: 5vh;
+    width:40%;
+    height:auto;
+    position: relative;
+    float: right;
+    top:20vh;
+    right:5vw;
+}
+.name{
+   font-size: 2rem;
+    font-family: 'Archivo', sans-serif;
+    display: inline;
+    position: relative;
+    left:44vw;
+   top: 2vh;
+}
+.search{
+    display: inline;
+    position: relative;
+    left:10vw;
+}
