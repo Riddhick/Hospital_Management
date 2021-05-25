@@ -17,7 +17,7 @@
             Class.forName("oracle.jdbc.driver.OracleDriver");
             Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","PROJECT","1234");
             Statement st=con.createStatement();
-            ResultSet rs=st.executeQuery("SELECT doc_name,dname,d_date,d_time,doc_id FROM doctor,department where doctor.deptno=department.deptno and doc_name like '%"+docname+"%'");%>
+            ResultSet rs=st.executeQuery("SELECT doc_name,dname,d_date,d_time,doc_id,doctor.deptno FROM doctor,department where doctor.deptno=department.deptno and doc_name like '%"+docname+"%'");%>
         
     <header>
         <ul >
@@ -50,7 +50,9 @@
                 String dpn=rs.getString("dname");
                 String ddate=rs.getString("d_date");
                 String dtime=rs.getString("d_time");
-                String did=rs.getString("doc_id");%>
+                String did=rs.getString("doc_id");
+                String dnum=rs.getString("deptno");
+                %>
                 <div class="details">
                  <div class="dname_div">  <h4 class="doc_details" id="dname"><%out.print(dn); %></h4></div> 
                  <div class="dpname_div"> <h4 class="doc_details" id="dpname"><%out.print(dpn) ;%></h4></div> 
@@ -58,6 +60,9 @@
                  <div class="time_div"> <h4 class="doc_details" id="time"><%out.print(dtime); %></h4></div> <br>
                  <form action="booking.jsp" id="form1">
                     <input type="text" value="<%=did%>" name="id" class="inv"> 
+                    <input type="text" value="<%=ddate%>" name="date" class="inv">
+                    <input type="text" value="<%=dtime%>" name="time" class="inv">
+                    <input type="text" value="<%=dnum%>" name="depno" class="inv">
                     <input type="submit" value="Appointment" class="appointment"> 
                 </form><br>
                 </div>
