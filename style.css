@@ -3,6 +3,9 @@
     margin: 0;
     border: 0;
 }
+body{
+    overflow-y: hidden;
+}
 .nav-bar{
     display: inline;
     float: right;

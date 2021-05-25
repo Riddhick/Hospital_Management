@@ -17,18 +17,8 @@
             Class.forName("oracle.jdbc.driver.OracleDriver");
             Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","PROJECT","1234");
             Statement st=con.createStatement();
-            ResultSet rs=st.executeQuery("SELECT * FROM doctor where doc_name like '%"+docname+"%'");
-            while(rs.next()){
-            String k=rs.getString("doc_name");
-            out.print(k);
-            }
-        }
-        catch(SQLException e)
-        {
-           // out.println("Can't Connect");
-            e.printStackTrace();
-        }
-    %>
+            ResultSet rs=st.executeQuery("SELECT doc_name,dname,d_date,d_time,doc_id FROM doctor,department where doctor.deptno=department.deptno and doc_name like '%"+docname+"%'");%>
+        
     <header>
         <ul >
             <li class="nav-bar"><button id="nav-btn">SERVICES</button></li>
@@ -49,15 +39,40 @@
     <div class="doclist">
         
         <div class="search">
-            <form action="welcome.jsp" method="POST" autocomplete="off">
-                <input type="text" placeholder="Search Doctor" name="search">
-                <input type="submit" value="search" id="searchbtn">
+            <form action="welcome.jsp" method="POST" autocomplete="off" class="form1">
+                <input type="text" placeholder="Search Doctor" name="search" id="searchbox">
+                <input type="submit" value="Search" id="searchbtn">
             </form>
         </div>
         <div class="searchresult">
-
+            <%   while(rs.next()){
+                String dn=rs.getString("doc_name");
+                String dpn=rs.getString("dname");
+                String ddate=rs.getString("d_date");
+                String dtime=rs.getString("d_time");
+                String did=rs.getString("doc_id");%>
+                <div class="details">
+                 <div class="dname_div">  <h4 class="doc_details" id="dname"><%out.print(dn); %></h4></div> 
+                 <div class="dpname_div"> <h4 class="doc_details" id="dpname"><%out.print(dpn) ;%></h4></div> 
+                 <div class="day_div">  <h4 class="doc_details" id="day"><%out.print(ddate); %></h4></div> 
+                 <div class="time_div"> <h4 class="doc_details" id="time"><%out.print(dtime); %></h4></div> <br>
+                 <form action="booking.jsp" id="form1">
+                    <input type="text" value="<%=did%>" name="id" class="inv"> 
+                    <input type="submit" value="Appointment" class="appointment"> 
+                </form><br>
+                </div>
+              <%  
+                } %>
+          
         </div>
     </div>
+    <% }
+    catch(SQLException e)
+    {
+       // out.println("Can't Connect");
+        e.printStackTrace();
+    }
+%>
     <script src="functions.js"></script>
 </body>
 </html>
