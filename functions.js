@@ -7,7 +7,21 @@ btn1.addEventListener('click',function(){
     else
     document.getElementById('p-list').style.display='block'
   });
- 
+ var btn2=document.getElementById('mng_prf')
+btn2.addEventListener('click',function(){
+  if(document.getElementById('doclist').style.display!='none')
+  {
+    document.getElementById('doclist').style.display='none'
+    document.getElementById('btn_list').style.display='block'
+  }
+  else{
+    document.getElementById('doclist').style.display='block'
+    document.getElementById('btn_list').style.display='none'
+  }
+});
+
+
+
   //const pname=document.getElementById("username").value;
  function  check(){
     var uname = document.forms["form2"]["username"].value;

@@ -95,3 +95,29 @@ input{
 .appointment:hover{
     background-color: #1B23D6;
 }
+.profile{
+    display:inline;
+    position: relative;
+    left:65vw;
+    top:2vh;
+}
+#mng_prf{
+    color: white;
+    background-color: red;
+    height: 5vh;
+    width:6.5vw;
+}
+#doclist{
+    display: block;
+}
+.btn_list{
+    background-color: #1B23D6;
+    display: none;
+    padding-bottom: 5vh;
+    width:40%;
+    height:auto;
+    position: absolute;
+    top:20vh;
+    left :50%;
+    box-shadow:3px 1px 10px 2px rgba(0, 0, 0, 0.507) ;
+}

@@ -35,8 +35,12 @@
         </ul>
     </header>
     <h3 class="name"><%=session.getAttribute("pname") %></h3>
-   
-    <div class="doclist">
+   <div class="profile"><button id="mng_prf">Manage Profile</button></div>
+   <div class="btn_list" id="btn_list"><button class="prf_btn" id="btn_list_1">Log Out</button>
+    <button class="prf_btn" id="btn_list_2">Change Password</button>
+    <button class="prf_btn" id="btn_list_3">Back</button>
+</div>
+    <div class="doclist" id="doclist">
         
         <div class="search">
             <form action="welcome.jsp" method="POST" autocomplete="off" class="form1">
