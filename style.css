@@ -11,6 +11,7 @@ body{
     float: right;
     align-items: left;
    position: relative;
+   z-index: 5;
 }
 header{
     float:left;
@@ -28,6 +29,7 @@ header{
 #nav-btn:hover{
     background-color: white;
     color:black;
+    z-index: 2;
 }
 #p-list{
     padding-left: 0;
@@ -39,6 +41,7 @@ header{
     box-shadow:5px 5px 10px  black;
     font-family: 'Architects Daughter', cursive;
     font-family: 'Archivo', sans-serif;
+    z-index: 5;
 }
 .p_list-ele{
     padding-bottom: 2vh;
@@ -47,6 +50,7 @@ header{
     padding-left: 1vw;
     padding-top: 2vh;
     padding-left: 0;
+    z-index: 2;
 }
 hr {
     display: block solid black;

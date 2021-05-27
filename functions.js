@@ -19,8 +19,15 @@ btn2.addEventListener('click',function(){
     document.getElementById('btn_list').style.display='none'
   }
 });
-
-
+var btn3=document.getElementById('btn_list_3')
+btn3.addEventListener('click',function(){
+  document.getElementById('doclist').style.display='block'
+    document.getElementById('btn_list').style.display='none'
+});
+var btn4=document.getElementById('btn_list_1')
+btn4.addEventListener('click',function(){
+  window.location="logout.jsp"
+});
 
   //const pname=document.getElementById("username").value;
  function  check(){

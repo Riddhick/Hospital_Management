@@ -100,18 +100,21 @@ input{
     position: relative;
     left:65vw;
     top:2vh;
+
 }
 #mng_prf{
     color: white;
     background-color: red;
     height: 5vh;
     width:6.5vw;
+    position: relative;
+    z-index: 0;
 }
 #doclist{
     display: block;
 }
 .btn_list{
-    background-color: #1B23D6;
+
     display: none;
     padding-bottom: 5vh;
     width:40%;
@@ -120,4 +123,29 @@ input{
     top:20vh;
     left :50%;
     box-shadow:3px 1px 10px 2px rgba(0, 0, 0, 0.507) ;
+    padding-top: 5vh;
+}
+.prf_btn{
+    width: 5vw;
+    height: 6vh;
+    position: relative;
+    color: white;
+    background-color: red;
+    font-family: 'Archivo', sans-serif;
+    margin-left: 2vw;
+    border-radius: 10px;
+}
+.prf_btn:hover{
+    background-color:#1B23D6;
+    transition: .4s;
+}
+#btn_list_2{
+    top:-1vh;
+    left: 8vw;
+}
+#btn_list_1{
+    left: 8vw;
+}
+#btn_list_3{
+    left: 8vw;
 }
