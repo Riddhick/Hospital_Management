@@ -27,6 +27,10 @@
         {
             flag=Integer.parseInt(rs.getString("capacity"));
         }
+        if(name==null)
+        {
+            flag=0;
+        }
         if(flag!=0)
         {
         PreparedStatement stmt=con.prepareStatement("insert into booking (username , deptno, doc_id , b_date , b_time) values(?,?,?,?,?)");  
