@@ -75,6 +75,34 @@
           
         </div>
     </div>
+    <div class="apmnt_list" id="apmnt_list">
+        <div class="apmnt_list_heading"><h3 class="name" id="apmnt">Appointments</h3></div>
+        <% String uname=(String)session.getAttribute("name"); 
+        ResultSet rs2=st.executeQuery("select * from booking,doctor,department where booking.doc_id=doctor.doc_id and doctor.deptno=department.deptno and username='"+uname+"'");
+        while(rs2.next()){
+            
+                String docname1=rs2.getString("doc_name");
+                String dpn1=rs2.getString("dname");
+                String bdate=rs2.getString("b_date");
+                String btime=rs2.getString("b_time");
+                String b_id=rs2.getString("booking_id");
+                String docid=rs2.getString("doc_id");
+        %>
+        <div class="up_ampnt">
+            <div class="dname_div">  <h4 class="doc_details" id="dname"><%out.print(docname1); %></h4></div> 
+            <div class="dpname_div"> <h4 class="doc_details" id="dpname"><%out.print(dpn1) ;%></h4></div> 
+            <div class="day_div">  <h4 class="doc_details" id="day"><%out.print(bdate); %></h4></div> 
+            <div class="time_div"> <h4 class="doc_details" id="time"><%out.print(btime); %></h4></div> <br>
+            <form action="cancel_booking.jsp" id="form1">
+                <input type="text" value="<%=b_id%>" name="bookingid" class="inv"> 
+                <input type="text" value="<%=docid%>" name="doctoridid" class="inv"> 
+                <input type="submit" value="Cancel" class="appointment"> 
+            </form><br>
+        </div>
+        <%
+    }
+    %>
+    </div>
     <% }
     catch(SQLException e)
     {
