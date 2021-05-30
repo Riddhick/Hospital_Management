@@ -1,5 +1,7 @@
 <html>
     <%@ page import="java.sql.*" %>
+    <%@ page import="java.time.*" %>
+    <%@ page import="java.time.temporal.TemporalAdjusters" %>
     <title>
         User
     </title>
@@ -103,7 +105,25 @@
     }
     %>
     </div>
-    <% }
+    <%
+    ResultSet rs3=st.executeQuery("SELECT * FROM booking");
+    while(rs3.next())
+    {
+        String bookingid=rs3.getString("booking_id");
+        String bookingdate=rs3.getString("b_date");
+        String doctorid=rs3.getString("doc_id");
+        LocalDate cur_date=LocalDate.now();
+        LocalDate check_date=LocalDate.parse(bookingdate);
+        if(cur_date.isAfter(check_date))
+        {
+           // out.println(bookingdate);
+           PreparedStatement stmt=con.prepareStatement("delete from booking where booking_id='"+bookingid+"'");  
+           int i=stmt.executeUpdate();   
+           PreparedStatement stmt2=con.prepareStatement("UPDATE doctor set capacity=capacity+1 WHERE doc_id='"+doctorid+"'"); 
+           int j=stmt2.executeUpdate(); 
+        }
+    }
+}
     catch(SQLException e)
     {
        // out.println("Can't Connect");
