@@ -12,6 +12,10 @@
 </head>
 <body class="user">
     <% String docname=request.getParameter("search");
+    String check_loggedin=(String)session.getAttribute("pname");
+    if(check_loggedin==null){
+        response.sendRedirect("login.jsp");
+    }
    // out.println(docname);
     int flag=0;
         try
