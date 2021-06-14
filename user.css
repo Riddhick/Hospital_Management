@@ -167,3 +167,23 @@ input{
     top:5vh;
     left:2vw;
 }
+#mng_prf_admin{
+    color: white;
+    background-color: red;
+    height: 5vh;
+    width:6.5vw;
+    position: relative;
+    z-index: 0;
+}
+.btn_list_admin{
+
+    display:block;
+    padding-bottom: 5vh;
+    width:40%;
+    height:auto;
+    position: absolute;
+    top:20vh;
+    left :50%;
+    box-shadow:3px 1px 10px 2px rgba(0, 0, 0, 0.507) ;
+    padding-top: 5vh;
+}

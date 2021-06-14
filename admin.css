@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    border:0;
+}
+.admin_tool{
+    padding-bottom: 5vh;
+    width:40%;
+    height:auto;
+    position: absolute;
+    top:20vh;
+    box-shadow:3px 1px 10px 2px rgba(0, 0, 0, 0.507) ;
+    left:5vw;
+}
+#doctor{
+    position: relative;
+    padding-top:2vh ;
+    left:15vw;
+}
+#dept{
+    position: relative;
+    padding-top:2vh ;
+    left:13vw;
+    top:5vh;
+   padding-bottom: 10vh;
+}
+.adm_btn{
+    width: 5vw;
+    height: 6vh;
+    position: relative;
+    color: white;
+    background-color: red;
+    font-family: 'Archivo', sans-serif;
+    margin-left: 2vw;
+    border-radius: 10px;
+}
+#doc_btn_1{
+    top:1vh;
+}
+.adm_btn:hover{
+    background-color:#1B23D6;
+    transition: .4s;
+}
+.doctor_tool{
+    position: relative;
+    left:7vw;
+    top:3vh;
+}
+.dept_tool{
+    position: relative;
+    left:7vw;
+    top:-2vh;
+}

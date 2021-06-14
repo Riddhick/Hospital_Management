@@ -32,3 +32,6 @@ update department set dname='Neurology' where deptno=3
 insert into doctor (doc_name , deptno, d_date , d_time , capacity) values ('Dr. Riya Talukdar',3,'Wednessday','19:00:00',1)
 
 select * from doctor
+
+create table admin (password varchar2(30))
+insert into admin (password) values('admin123') 
