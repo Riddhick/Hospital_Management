@@ -37,6 +37,18 @@
             <button class="adm_btn">Update Department</button>
         </div>
      </div>
+     <div class="add_doc" id="add_doc">
+         <form action="admin_add.jsp" autocomplete="off" method="POST" class="form3">
+            <input type="text" name="doc_name" placeholder="Doctor Name">
+            <input type="text" name="day" placeholder="Day">
+            <input type="text" name="time" placeholder="Time">
+            <input type="text" name="cap" placeholder="Capacity">
+            <input type="text" name="dept_no" placeholder="Department No.">
+            <button type="submit" class="adm_btn">Add</button>
+         </form>
+         <button class="adm_btn" id="can_btn"><a href="Admin.jsp">Cancel</a></button>
+     </div>
         <script src="functions.js"></script>
+        <script src="admin_func.js"></script>
     </body>
 </html>

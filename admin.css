@@ -50,3 +50,20 @@
     left:7vw;
     top:-2vh;
 }
+.add_doc{
+    padding-bottom: 5vh;
+    width:40%;
+    height:auto;
+    position: absolute;
+    top:20vh;
+    box-shadow:3px 1px 10px 2px rgba(0, 0, 0, 0.507) ;
+    left:5vw;
+    display:none;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a{
+    color: white;
+}
