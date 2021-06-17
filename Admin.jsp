@@ -1,4 +1,5 @@
 <html>
+    <%@ page import="java.sql.*" %>
     <head>
         <meta  name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1,viewport-fit=cover">
         <title>Admin</title>
@@ -9,6 +10,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     </head>
     <body>
+        <%
+        try{
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+        Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","PROJECT","1234");
+        Statement st=con.createStatement();
+        ResultSet rs=st.executeQuery("SELECT * FROM department ");%>
         <header>
             <ul >
                 <li class="nav-bar"><button id="nav-btn">SERVICES</button></li>
@@ -48,7 +55,30 @@
          </form>
          <button class="adm_btn" id="can_btn"><a href="Admin.jsp">Cancel</a></button>
      </div>
+     <div class="admin_details">
+         <div class="Dept_details">
+             <header id="inside_header"><h2 class="heading_dlist" id="heading_1">Department Name</h2>
+                <h2 class="heading_dlist" id="heading_2">Department No</h2>
+            </header>
+                <% while(rs.next())
+                {
+                    String dname=rs.getString("dname");
+                    String dnum=rs.getString("deptno"); %>
+                    <div class="details">
+                        <div class="adm_deptname_div">  <h4 class="dep_details" id="dname"><%out.print(dname); %></h4></div> 
+                        <div class="dno_div"> <h4 class="dep_details" id="dpname"><%out.print(dnum) ;%></h4></div>
+                </div>
+                <%}%>
+            
+         </div>
+     </div>
         <script src="functions.js"></script>
         <script src="admin_func.js"></script>
+        <% } catch(SQLException e)
+        {
+            out.println(e);
+            e.printStackTrace();
+        }
+    %>
     </body>
 </html>

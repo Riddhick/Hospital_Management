@@ -67,3 +67,37 @@ a:link{
 a{
     color: white;
 }
+.admin_details {
+    padding-bottom: 5vh;
+    width:40%;
+    height:50vh;
+    position: absolute;
+    top:40vh;
+    box-shadow:3px 1px 10px 2px rgba(0, 0, 0, 0.507) ;
+    left :50%;
+}
+.heading_dlist {
+    display:inline;
+}
+#heading_1 {
+    padding-right: 6vw;
+    padding-left: 2vw;
+}
+#inside_header {
+    padding-top: 2vh;
+    color: white;
+}
+.list_item {
+    width:1vw;
+}
+.adm_deptname_div{
+    display:inline-block;
+    width:13vw;
+    padding-bottom: 2vh;
+    padding-left: 5vw;
+}
+.dno_div{
+    display:inline-block;
+    width: 8vw;
+    padding-left: 12vw;
+}
