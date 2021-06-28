@@ -101,3 +101,30 @@ a{
     width: 8vw;
     padding-left: 12vw;
 }
+.form3 {
+    overflow: hidden;
+    background-color: white;
+    padding: 40px 30px 30px 30px;
+    margin-bottom: 0%;
+}
+input {
+    display: block;
+    border-radius: 40px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+    box-shadow: 5px 10px 10px #03052246;
+    outline: none;
+}
+.form4 {
+        overflow: hidden;
+        background-color: white;
+        padding: 40px 30px 30px 30px;
+        margin-bottom: 0%;
+}
+#add_dept {
+    display: none;
+}

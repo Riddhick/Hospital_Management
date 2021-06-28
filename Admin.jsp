@@ -39,7 +39,7 @@
         </div>
         <h2 id="dept">Departments</h2>
         <div class="dept_tool">
-            <button class="adm_btn" id="adm_btn_1">Add Department</button>
+            <button class="adm_btn" id="dep_btn_1">Add Department</button>
             <button class="adm_btn">Delete Department</button>
             <button class="adm_btn">Update Department</button>
         </div>
@@ -55,6 +55,13 @@
          </form>
          <button class="adm_btn" id="can_btn"><a href="Admin.jsp">Cancel</a></button>
      </div>
+     <div  class="add_doc" id="add_dept">
+        <form action="admin_dadd.jsp" autocomplete="off" method="POST" class="form3">
+            <input type="text" name="dept_name" placeholder="Department Name">
+            <button type="submit" class="adm_btn">Add</button>
+        </form>
+        <button class="adm_btn" id="can_btn"><a href="Admin.jsp">Cancel</a></button>
+     </div>
      <div class="admin_details">
          <div class="Dept_details">
              <header id="inside_header"><h2 class="heading_dlist" id="heading_1">Department Name</h2>
@@ -69,7 +76,6 @@
                         <div class="dno_div"> <h4 class="dep_details" id="dpname"><%out.print(dnum) ;%></h4></div>
                 </div>
                 <%}%>
-            
          </div>
      </div>
         <script src="functions.js"></script>
