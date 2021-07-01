@@ -40,7 +40,7 @@
         <h2 id="dept">Departments</h2>
         <div class="dept_tool">
             <button class="adm_btn" id="dep_btn_1">Add Department</button>
-            <button class="adm_btn">Delete Department</button>
+            <button class="adm_btn" id="dep_btn_2">Delete Department</button>
             <button class="adm_btn">Update Department</button>
         </div>
      </div>
@@ -100,6 +100,26 @@
            </div>
            <%} %>
      </div>
+     <div class="Doctor_details" id="Department_details_del">
+        <button class="adm_btn" id="back2">Back</button>
+       <%
+       ResultSet rs3=st.executeQuery("SELECT * FROM department");
+       while(rs3.next())
+       {
+           String departmentname=rs3.getString("dname");
+           String departmentid=rs3.getString("deptno");
+       
+       %>
+       <div class="details" id="admin_doc_del">
+           <div class="del_dept">  <h4 class="doc_details" id="docid"><%out.print(departmentid); %></h4></div> 
+           <div class="del_dept"> <h4 class="doc_details" id="docname"><%out.print(departmentname) ;%></h4></div> 
+           <form action="deletedept.jsp" >
+              <input type="text" value="<%=departmentid%>" name="id" class="inv"> 
+              <input type="submit" value="Delete" class="delete_admin_dept"> 
+          </form><br>
+          </div>
+          <%} %>
+    </div>
         <script src="functions.js"></script>
         <script src="admin_func.js"></script>
         <% } catch(SQLException e)

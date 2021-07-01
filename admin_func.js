@@ -36,3 +36,16 @@ btn_back.addEventListener('click',function(){
   document.getElementById('admin_tool').style.display="block";
   document.getElementById('Doctor_details_del').style.display="none";
 });
+
+var btn4=document.getElementById('dep_btn_2')
+btn4.addEventListener('click',function(){
+  document.getElementById('admin_tool').style.display="none";
+  document.getElementById('Department_details_del').style.display="block";
+});
+
+
+var btn_back2=document.getElementById('back2')
+btn_back2.addEventListener('click',function(){
+  document.getElementById('admin_tool').style.display="block";
+  document.getElementById('Department_details_del').style.display="none";
+});
