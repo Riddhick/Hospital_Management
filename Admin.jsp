@@ -34,7 +34,7 @@
         <h2 id="doctor">Doctor</h2>
         <div class="doctor_tool">
             <button class="adm_btn" id="doc_btn_1">Add Doctor</button>
-            <button class="adm_btn">Delete Doctor</button>
+            <button class="adm_btn" id="doc_btn_2">Delete Doctor</button>
             <button class="adm_btn">Update Doctor</button>
         </div>
         <h2 id="dept">Departments</h2>
@@ -63,7 +63,7 @@
         <button class="adm_btn" id="can_btn"><a href="Admin.jsp">Cancel</a></button>
      </div>
      <div class="admin_details">
-         <div class="Dept_details">
+         <div class="Dept_details" id="Dept_details">
              <header id="inside_header"><h2 class="heading_dlist" id="heading_1">Department Name</h2>
                 <h2 class="heading_dlist" id="heading_2">Department No</h2>
             </header>
@@ -77,6 +77,28 @@
                 </div>
                 <%}%>
          </div>
+     </div>
+     <div class="Doctor_details" id="Doctor_details_del">
+         <button class="adm_btn" id="back">Back</button>
+        <%
+        ResultSet rs2=st.executeQuery("SELECT * FROM doctor,department where doctor.deptno=department.deptno");
+        while(rs2.next())
+        {
+            String doctorname=rs2.getString("doc_name");
+            String doctorid=rs2.getString("doc_id");
+            String dpn=rs2.getString("dname");
+        
+        %>
+        <div class="details" id="admin_doc_del">
+            <div class="del_doc">  <h4 class="doc_details" id="docid"><%out.print(doctorid); %></h4></div> 
+            <div class="del_doc"> <h4 class="doc_details" id="docname"><%out.print(doctorname) ;%></h4></div> 
+            <div class="del_doc">  <h4 class="doc_details" id="deptno"><%out.print(dpn); %></h4></div> 
+            <form action="deletedoc.jsp" >
+               <input type="text" value="<%=doctorid%>" name="id" class="inv"> 
+               <input type="submit" value="Delete" class="delete_admin_doc"> 
+           </form><br>
+           </div>
+           <%} %>
      </div>
         <script src="functions.js"></script>
         <script src="admin_func.js"></script>

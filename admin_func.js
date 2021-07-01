@@ -24,3 +24,15 @@ btn2.addEventListener('click',function(){
     document.getElementById('admin_tool').style.display='none'
   }
 });
+
+var btn3=document.getElementById('doc_btn_2')
+btn3.addEventListener('click',function(){
+  document.getElementById('admin_tool').style.display="none";
+  document.getElementById('Doctor_details_del').style.display="block";
+});
+
+var btn_back=document.getElementById('back')
+btn_back.addEventListener('click',function(){
+  document.getElementById('admin_tool').style.display="block";
+  document.getElementById('Doctor_details_del').style.display="none";
+});
