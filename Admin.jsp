@@ -32,16 +32,22 @@
      </div>
      <div class="admin_tool" id="admin_tool">
         <h2 id="doctor">Doctor</h2>
-        <div class="doctor_tool">
+        <div class="doctor_tool" id="doctor_tool">
             <button class="adm_btn" id="doc_btn_1">Add Doctor</button>
             <button class="adm_btn" id="doc_btn_2">Delete Doctor</button>
-            <button class="adm_btn">Update Doctor</button>
+            <button class="adm_btn" id="doc_btn_3">Update Doctor</button>
         </div>
         <h2 id="dept">Departments</h2>
-        <div class="dept_tool">
+        <div class="dept_tool" id="dept_tool">
             <button class="adm_btn" id="dep_btn_1">Add Department</button>
             <button class="adm_btn" id="dep_btn_2">Delete Department</button>
             <button class="adm_btn">Update Department</button>
+        </div>
+        <div class="update_doctor_sub" id="update_doctor_sub">
+            <button class="adm_btn" >Change Doctor Time</button>
+            <button class="adm_btn" >Change Doctor Day</button>
+            <button class="adm_btn" >Change  Capacity</button>
+            <button class="adm_btn" id="back_btn">Back</button>
         </div>
      </div>
      <div class="add_doc" id="add_doc">

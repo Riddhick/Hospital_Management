@@ -9,6 +9,7 @@
     <link href="user.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <meta http-equiv="cache-control" content="no-cache">
 </head>
 <body class="user">
     <% String docname=request.getParameter("search");

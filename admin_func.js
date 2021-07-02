@@ -49,3 +49,22 @@ btn_back2.addEventListener('click',function(){
   document.getElementById('admin_tool').style.display="block";
   document.getElementById('Department_details_del').style.display="none";
 });
+
+var btn5=document.getElementById('doc_btn_3')
+btn5.addEventListener('click',function(){
+  document.getElementById('doctor_tool').style.display="none";
+  document.getElementById('dept_tool').style.display="none";
+  document.getElementById('doctor').style.display="none";
+  document.getElementById('dept').style.display="none";
+  document.getElementById('update_doctor_sub').style.display="block";
+});
+
+
+var back_btn3=document.getElementById('back_btn')
+back_btn.addEventListener('click',function(){
+  document.getElementById('doctor_tool').style.display="block";
+  document.getElementById('dept_tool').style.display="block";
+  document.getElementById('doctor').style.display="block";
+  document.getElementById('dept').style.display="block";
+  document.getElementById('update_doctor_sub').style.display="none";
+});

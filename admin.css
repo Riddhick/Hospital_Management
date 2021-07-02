@@ -193,3 +193,19 @@ input {
    overflow-x: none;
    display: none;
 }
+#update_doctor_sub {
+    position: relative;
+    left:7vw;
+    display:none;
+    top:3vh;
+}
+
+#back_btn {
+    background-color: #1B23D6;
+    position: relative;
+    top:1.2vh;
+}
+
+#back_btn:hover {
+    background-color: red;
+}
