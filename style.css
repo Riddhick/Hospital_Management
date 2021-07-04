@@ -127,3 +127,12 @@ a:link{
     top:2vh;
     color: blue;
 }
+.cardlogo {
+    position: relative;
+      border-radius: 0%;
+      box-shadow: none;
+    width: 5vw;
+    display: inline;
+    left:20vw;
+    top:-8vh;
+}

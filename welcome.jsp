@@ -69,7 +69,7 @@
                  <div class="dpname_div"> <h4 class="doc_details" id="dpname"><%out.print(dpn) ;%></h4></div> 
                  <div class="day_div">  <h4 class="doc_details" id="day"><%out.print(ddate); %></h4></div> 
                  <div class="time_div"> <h4 class="doc_details" id="time"><%out.print(dtime); %></h4></div> <br>
-                 <form action="booking.jsp" id="form1">
+                 <form action="payment.jsp" id="form1" method="POST">
                     <input type="text" value="<%=did%>" name="id" class="inv"> 
                     <input type="text" value="<%=ddate%>" name="date" class="inv">
                     <input type="text" value="<%=dtime%>" name="time" class="inv">
