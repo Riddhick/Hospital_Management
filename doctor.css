@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+.doc {
+    position: relative;
+    height:80vh;
+    width:40vw;
+    left:3vw;
+    top:15vh;
+    box-shadow:3px 1px 10px 2px rgba(0, 0, 0, 0.507) ;
+    padding-left: 5vw;
+    font-size: 5rem;
+    overflow-y: scroll;
+}
+.caption {
+    font-size: 1rem;
+}
