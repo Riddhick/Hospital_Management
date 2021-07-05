@@ -19,18 +19,19 @@
     {
         Class.forName("oracle.jdbc.driver.OracleDriver");
         Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","PROJECT","1234");%>
-        <form action="booking.jsp" id="form5" method="POST" >
+        <form action="booking.jsp" id="form5" autocomplete="off" method="POST" onsubmit="return cardValidate()" >
             <input type="text" value="<%=did%>" name="id" class="inv"> 
             <input type="text" value="<%=ddate%>" name="date" class="inv">
             <input type="text" value="<%=dtime%>" name="time" class="inv">
             <input type="text" value="<%=dnum%>" name="depno" class="inv">
-            <input type="text" placeholder="Card Number" >
-            <input type="text" placeholder="Name" >
-            <input type="text" placeholder="Expiry Date: mm/yy" >
-            <input type="text" placeholder="CVV" >
+            <input type="text" placeholder="Card Number" id="cardnumber">
+            <input type="text" placeholder="Name" id="name">
+            <input type="text" placeholder="Expiry Date: mm/yy"  id="date">
+            <input type="text" placeholder="CVV" id="cvv">
             <input type="submit" value="Proceed" class="appointment" id="proceed"> 
-           <input type="image" src="./img/mastercard.png" class="cardlogo">
         </form><br>
+        <input type="image" src="./img/mastercard.png" class="cardlogo">
+        <h5 class="payment_info">You will be charged &#x20b9 500 as appoinment fees</h5>
         </div>
         
    <% }
@@ -41,5 +42,6 @@
     }
     %>
     <script src="functions.js"></script>
+    <script src="payment.js"></script>
 </body> 
 </html>

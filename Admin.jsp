@@ -41,7 +41,7 @@
         <div class="dept_tool" id="dept_tool">
             <button class="adm_btn" id="dep_btn_1">Add Department</button>
             <button class="adm_btn" id="dep_btn_2">Delete Department</button>
-            <button class="adm_btn">Update Department</button>
+           
         </div>
         <div class="update_doctor_sub" id="update_doctor_sub">
             <button class="adm_btn" >Change Doctor Time</button>

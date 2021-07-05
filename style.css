@@ -133,6 +133,13 @@ a:link{
       box-shadow: none;
     width: 5vw;
     display: inline;
-    left:20vw;
-    top:-8vh;
+    left:55vw;
+    top:55vh;
+}
+.payment_info {
+    display: inline;
+    position: relative;
+    left:32vw;
+    top:63vh;
+    font-size: 1.2rem;
 }
