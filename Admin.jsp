@@ -44,9 +44,9 @@
            
         </div>
         <div class="update_doctor_sub" id="update_doctor_sub">
-            <button class="adm_btn" >Change Doctor Time</button>
-            <button class="adm_btn" >Change Doctor Day</button>
-            <button class="adm_btn" >Change  Capacity</button>
+            <button class="adm_btn" id="updatetime">Change Doctor Time</button>
+            <button class="adm_btn" id="updatedate">Change Doctor Day</button>
+            <button class="adm_btn" id="updatecap">Change  Capacity</button>
             <button class="adm_btn" id="back_btn">Back</button>
         </div>
      </div>
@@ -73,7 +73,7 @@
              <header id="inside_header"><h2 class="heading_dlist" id="heading_1">Department Name</h2>
                 <h2 class="heading_dlist" id="heading_2">Department No</h2>
             </header>
-                <% while(rs.next())
+               <% while(rs.next())
                 {
                     String dname=rs.getString("dname");
                     String dnum=rs.getString("deptno"); %>
@@ -83,7 +83,24 @@
                 </div>
                 <%}%>
          </div>
+         <div class="Doct_details" id="admin_docdetails">
+            <% ResultSet rs4=st.executeQuery("select * from doctor");
+            while(rs4.next())
+            {
+                String doctorname=rs4.getString("doc_name");
+            String doctorid=rs4.getString("doc_id");
+            %>
+           <div class="details">
+                        <div class="adm_deptname_div">  <h4 class="dep_details" id="dname"><%out.print(doctorid); %></h4></div> 
+                        <div class="dno_div"> <h4 class="dep_details" id="dpname"><%out.print(doctorname) ;%></h4></div>
+                </div>
+           <% }%>
+         </div>
      </div>
+     <div class="spbtn">
+        <button class="special_btn" id="spb1">1</button>
+        <button class="special_btn" id="spb2">2</button>
+    </div>
      <div class="Doctor_details" id="Doctor_details_del">
          <button class="adm_btn" id="back">Back</button>
         <%
@@ -125,6 +142,30 @@
           </form><br>
           </div>
           <%} %>
+    </div>
+    <div class="details" id="update_capacity">
+        <form action="updatecap.jsp" autocomplete="off">
+            <input type="text" placeholder="Doctor ID" name="id" id="field1">
+            <input type="text" placeholder="New Capacity" name="cap" id="field1">
+            <input type="submit" value="Update" class="delete_admin_dept" id="updatebtn1"> 
+        </form>
+        <button class="prf_btn" id="updateback1">Back</button>
+    </div>
+    <div class="details" id="update_time">
+        <form action="updatetime.jsp" autocomplete="off">
+            <input type="text" placeholder="Doctor ID" name="id" id="field1">
+            <input type="text" placeholder="New Time" name="cap" id="field1">
+            <input type="submit" value="Update" class="delete_admin_dept" id="updatebtn1"> 
+        </form>
+        <button class="prf_btn" id="updateback2">Back</button>
+    </div>
+    <div class="details" id="update_date">
+        <form action="updatedate.jsp" autocomplete="off">
+            <input type="text" placeholder="Doctor ID" name="id" id="field1">
+            <input type="text" placeholder="New Day" name="cap" id="field1">
+            <input type="submit" value="Update" class="delete_admin_dept" id="updatebtn1"> 
+        </form>
+        <button class="prf_btn" id="updateback3">Back</button>
     </div>
         <script src="functions.js"></script>
         <script src="admin_func.js"></script>

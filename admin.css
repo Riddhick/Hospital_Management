@@ -209,3 +209,85 @@ input {
 #back_btn:hover {
     background-color: red;
 }
+#update_capacity {
+    height: 40vh;
+    width:40vw;
+    position: relative;
+    left:4vw;
+    top:10vh;
+   margin: 0;
+   box-shadow: 5px 10px 10px #03052246;
+  display: none;
+  padding-top: 5vh;
+}
+
+#update_date {
+    height: 40vh;
+    width:40vw;
+    position: relative;
+    left:4vw;
+    top:10vh;
+   margin: 0;
+   box-shadow: 5px 10px 10px #03052246;
+  display: none;
+  padding-top: 5vh;
+}
+
+#update_time {
+    height: 40vh;
+    width:40vw;
+    position: relative;
+    left:4vw;
+    top:10vh;
+   margin: 0;
+   box-shadow: 5px 10px 10px #03052246;
+  display: none;
+  padding-top: 5vh;
+}
+
+#updatebtn1 {
+    position: relative;
+    top:5vh;
+}
+#field1 {
+    width:20vw;
+    position: relative;
+    left:10vw;
+}
+#updateback1 {
+    position: relative;
+    left:8vw;
+}
+
+#updateback2 {
+    position: relative;
+    left:8vw;
+}
+
+#updateback3 {
+    position: relative;
+    left:8vw;
+}
+
+.spbtn {
+    position: relative;
+    top:80vh;
+    left:60vw;
+    display: inline;
+}
+
+.special_btn {
+    height: 5vh;
+    width: 5vh;
+    border-radius: 40px;
+    background-color: red;
+    color: white;
+}
+
+.special_btn:hover{
+    background-color: #1B23D6;
+}
+
+#admin_docdetails {
+    display: none;
+}
