@@ -13,7 +13,7 @@
     <body>
         <header>
             <ul >
-                <li class="nav-bar"><button id="nav-btn">SERVICES</button></li>
+                <li class="nav-bar"><a href="services.html"><button id="nav-btn">SERVICES</button></a></li>
                 <li class="nav-bar"><a href="department.jsp"><button id="nav-btn">DEPARTMENTS</button></a></li>
                 <li class="nav-bar" id="nav_p_btn"><button id="nav-btn" id="nav_p_btn">PATIENT</button>
                     <ul id="p-list">

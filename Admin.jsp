@@ -18,7 +18,7 @@
         ResultSet rs=st.executeQuery("SELECT * FROM department ");%>
         <header>
             <ul >
-                <li class="nav-bar"><button id="nav-btn">SERVICES</button></li>
+                <li class="nav-bar"><a href="services.html"><button id="nav-btn">SERVICES</button></a></li>
                 <li class="nav-bar"><button id="nav-btn"><a href="department.jsp">DEPARTMENTS</a></button></li>
                 <li class="nav-bar" id="nav_a_btn"><a href="Admin.jsp"><button id="nav-btn" id="nav_p_btn">ADMIN</button></a>
                 </li>

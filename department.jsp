@@ -6,14 +6,14 @@
         </title>
         <link href="style.css" rel="stylesheet">
         <link href="user.css" rel="stylesheet">
-        <link href="doctor.css" rel="stylesheet">
+        <link href="dept.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <ul >
-                <li class="nav-bar"><button id="nav-btn">SERVICES</button></li>
+                <li class="nav-bar"><a href="services.html"><button id="nav-btn">SERVICES</button></a></li>
                 <li class="nav-bar"><a href="department.jsp"><button id="nav-btn">DEPARTMENTS</button></a></li>
                 <li class="nav-bar" id="nav_p_btn"><button id="nav-btn" id="nav_p_btn">PATIENT</button>
                     <ul id="p-list">
