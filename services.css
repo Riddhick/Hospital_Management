@@ -96,12 +96,21 @@ border-radius: 50%;
     filter:contrast(150%);
 } 
 footer {
-    position: relative;
+    position: fixed;
     left:80vw;
-    top:50vh;
+    top:90vh;
     width: 20vw;
     display: inline;
 }
 .contact{
     display: inline;
+}
+
+.text_show {
+    display:table;
+    margin:0 auto;
+    position: relative;
+    top:-30vh;
+    height: -10vh;
+    font-size: 1.5rem;
 }

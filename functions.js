@@ -28,6 +28,11 @@ var btn4=document.getElementById('btn_list_1')
 btn4.addEventListener('click',function(){
   window.location="logout.jsp"
 });
+var btn5=document.getElementById('btn_list_2')
+btn5.addEventListener('click',function(){
+  window.location="updatepassword.html"
+});
+
 
 window.addEventListener( "pageshow", function ( event ) {
   var historyTraversal = event.persisted || ( typeof window.performance != "undefined" && window.performance.navigation.type === 2 );
