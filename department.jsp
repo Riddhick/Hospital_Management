@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="depbody">
         <header>
             <ul >
                 <li class="nav-bar"><a href="services.html"><button id="nav-btn">SERVICES</button></a></li>
@@ -39,7 +39,7 @@
                             %>
                             <div class="dpname_div"> <h4 class="doc_details" id="dpname"><%out.print(department) ;%></h4></div> 
                            
-                            <div class="time_div"> <h4 class="doc_details" id="dpno"><%out.print(dpno); %></h4></div> <br>
+                             <br>
                         <%}
                     }
                     catch(SQLException e)

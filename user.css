@@ -152,11 +152,12 @@ input{
 .apmnt_list{
     padding-bottom: 5vh;
     width:40%;
-    height:auto;
+    height:45vh;
     position: absolute;
     top:20vh;
     box-shadow:3px 1px 10px 2px rgba(0, 0, 0, 0.507) ;
     left:5vw;
+    overflow-y: auto;
 }
 #apmnt{
     position: relative;

@@ -189,7 +189,7 @@ input {
     left:4vw;
    margin: 0;
    box-shadow: 5px 10px 10px #03052246;
-   overflow-y: scroll;
+   overflow-y: auto;
    overflow-x: none;
    display: none;
 }

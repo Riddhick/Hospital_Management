@@ -9,6 +9,7 @@
     width:30vw;
     left:30vw;
     top:15vh;
+    background-color: aliceblue;
     box-shadow:3px 1px 10px 2px rgba(0, 0, 0, 0.507) ;
     padding-left: 10vw;
     font-size: 5rem;
@@ -22,4 +23,13 @@ box-shadow: 2px 3px 23px 5px rgba(0, 0, 0, 0.63), 2px 3px 23px 5px rgba(227,34,3
  }
  .dpname_div {
      padding-right: 10vw;
+     padding-bottom: 2vh;
+     padding-top: 2vh;
+     padding-left: 4vw;
+ }
+
+ .depbody{
+    width: 100%;
+    height: 50vh;
+      background-image:url("img/hospital1.jpg");
  }
