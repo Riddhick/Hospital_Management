@@ -27,8 +27,8 @@
         </header>
         <div class="profile"><button id="mng_prf_admin">Manage Profile</button></div>
         <div class="btn_list_admin" id="btn_list"><a href="logout.jsp"><button class="prf_btn" id="btn_list_1">Log Out</button></a>
-         <button class="prf_btn" id="btn_list_2">Change Password</button>
-         <button class="prf_btn" id="btn_list_3">Back</button>
+         <a href="updateadminpass.html"><button class="prf_btn" id="btn_list_2">Change Password</button></a>
+      
      </div>
      <div class="admin_tool" id="admin_tool">
         <h2 id="doctor">Doctor</h2>

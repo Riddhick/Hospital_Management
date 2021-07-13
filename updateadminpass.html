@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Update Password</title>
+        <link href="form.css" rel="stylesheet">
+    </head>
+    <script>
+        function check()
+        {
+        var a=document.getElementById("password").value;
+        if(a==""){
+        document.getElementById("message").innerHTML="Password can not be Empty";
+        return false;
+        }
+        }
+
+        </script>
+    <body class="update">
+            <form  action="updateadminpass.jsp" method="POST" autocomplete="off" class="form1" onsubmit="return check()" >
+               <input type="password" name="password" placeholder="New Password" id="pwd">
+                   <input type="password" name="con_paswd" placeholder="Confirm Password"  id="cpdw">
+                   <span id="message"></span>
+                   <input type="submit" value="Update" class="button" id="signin" >
+                   <a href="Admin.jsp"><input type="button" value="Cancel" class="button" id="signup"></a>
+                   
+            </form>
+    </body>
+</html>
